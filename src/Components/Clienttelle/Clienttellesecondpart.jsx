@@ -21,7 +21,7 @@ const HeroSection = () => {
     via-[#ffd54f] 
      
     
-    to-[#a6c465]    text-white flex flex-col md:flex-row p-10"
+    to-black    text-white flex flex-col md:flex-row p-10"
     data-aos="zoom-in">
       <div className="flex flex-col lg:flex-row items-center lg:items-start mx-10">
         
