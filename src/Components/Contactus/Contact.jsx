@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { FaPhone } from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import blog from '../../../public/Images/blog-1.jpg';
@@ -129,59 +132,29 @@ const ContactPage = () => {
                 <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-800">
                   Contact Information
                 </h3>
+                <div className="flex flex-col items-start mb-4">
+      <div className="flex items-center mb-2">
+        <FaMapMarkerAlt className="w-6 h-6 text-[#a6c465] mr-4" />
+        <p className="text-gray-700 text-left">
+          Second floor, City Centre, 0413, Jharkhand 826001
+        </p>
+      </div>
+      <p className="text-gray-700 text-left pl-10 ">
+        Kasturba Nagar, Dhanbad
+      </p>
+    </div>
                 <div className="flex items-center mb-4">
-                  <svg
-                    className="w-6 h-6 text-[#a6c465] mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M2.003 12.5a10 10 0 1116.59-6.591M12 15v-3m0 0l-2 2m2-2l2 2m1-4a7 7 0 00-7-7 7 7 0 00-7 7v5a7 7 0 007 7h7a7 7 0 007-7v-5z"
-                    />
-                  </svg>
-                  <p className="text-gray-700">
-                    123 Business Rd, Tech City, TC 12345
-                  </p>
+                <div className="flex items-center space-x-2">
+      <FaPhone className="w-6 h-6 text-[#a6c465]" />
+      <a href="tel:9308788991" className="text-gray-700 pl-2">
+        9308788991
+      </a>
+    </div>
                 </div>
                 <div className="flex items-center mb-4">
-                  <svg
-                    className="w-6 h-6 text-[#a6c465] mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5.828 14.828a4 4 0 015.657 0L12 16l.515-.515a4 4 0 015.657 5.657l-1.57 1.568a4 4 0 01-5.657 0L12 20l-1.514-1.515a4 4 0 01-5.657-5.657l1.569-1.568z"
-                    />
-                  </svg>
-                  <p className="text-gray-700">+1 (555) 123-4567</p>
-                </div>
-                <div className="flex items-center mb-4">
-                  <svg
-                    className="w-6 h-6 text-[#a6c465] mr-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 4v16h16V4H4zM2 2h20v20H2V2z"
-                    />
-                  </svg>
-                  <p className="text-gray-700">contact@yourcompany.com</p>
-                </div>
+      <FaEnvelope className="w-6 h-6 text-[#a6c465] mr-4" />
+      <p className="text-gray-700 ">contact@yourcompany.com</p>
+    </div>
                 <div className="flex space-x-4 mt-6">
                   <a
                     href="https://facebook.com"

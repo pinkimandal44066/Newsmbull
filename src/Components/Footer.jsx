@@ -47,7 +47,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/Product"
+                    to="/career"
                     className="text-lg hover:text-gray-400"
                   >
                    Careers

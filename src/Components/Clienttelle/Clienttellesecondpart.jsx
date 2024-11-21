@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos'; 
+import 'aos/dist/aos.css'; 
 
 const HeroSection = () => {
 
-  // Initialize AOS on component mount
+  
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Animation duration
-      once: false,     // Trigger animation every time section comes into view
-      offset: 200,     // Offset when the animation triggers (adjust as needed)
+      duration: 1000,  
+      once: false,    
+      offset: 200,     
     });
   }, []);
 
@@ -25,12 +25,12 @@ const HeroSection = () => {
     data-aos="zoom-in">
       <div className="flex flex-col lg:flex-row items-center lg:items-start mx-10">
         
-        {/* Left side content (text with zoom-in-up effect) */}
+        
         <div
           className="w-full lg:w-1/2 text-center lg:text-left lg:pr-8"
-          data-aos="zoom-in-up"  // AOS zoom-in-up animation for text
-          data-aos-duration="1000" // Duration for the zoom effect
-          data-aos-once="false"    // Animation triggers every time when scrolled into view
+          data-aos="zoom-in-up"  
+          data-aos-duration="1000"
+          data-aos-once="false"    
         >
           <h2 className="text-4xl font-bold mb-4">Revolutionize Your Business</h2>
           <p className="text-lg mb-6">
@@ -66,12 +66,12 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right side image with zoom-in-up effect */}
+       
         <div
           className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0"
-          data-aos="zoom-in-up"  // AOS zoom-in-up animation for image
-          data-aos-duration="1000" // Duration for zoom effect
-          data-aos-once="false"    // Animation triggers every time when scrolled into view
+          data-aos="zoom-in-up"  
+          data-aos-duration="1000" 
+          data-aos-once="false"    
         >
           <img
             src="https://img.freepik.com/free-photo/business-people-working-together_23-2148889161.jpg?size=626&ext=jpg"
